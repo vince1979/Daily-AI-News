@@ -11,12 +11,13 @@ Gmail setup:
 
 import anthropic
 import smtplib
+import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import date
 
 # ─── Configuration ────────────────────────────────────────────────────────────
-ANTHROPIC_API_KEY  = "your_anthropic_api_key_here"
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 GMAIL_ADDRESS      = "you@gmail.com"        # Your Gmail address (sender)
 GMAIL_APP_PASSWORD = "xxxx xxxx xxxx xxxx"  # Gmail App Password (not your real password)
 TO_EMAIL           = "you@gmail.com"        # Where to send the digest (can be same or different)
