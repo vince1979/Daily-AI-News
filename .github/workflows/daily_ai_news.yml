@@ -1,8 +1,8 @@
-name: Daily AI News Email
+name: Monthly AI News Email
 
 on:
   schedule:
-    - cron: '0 13 * * *'
+    - cron: '0 13 1 * *'
   workflow_dispatch:
 
 jobs:
