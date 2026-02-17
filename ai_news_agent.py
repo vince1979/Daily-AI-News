@@ -18,9 +18,9 @@ from datetime import date
 
 # ─── Configuration ────────────────────────────────────────────────────────────
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
-GMAIL_ADDRESS      = "you@gmail.com"        # Your Gmail address (sender)
-GMAIL_APP_PASSWORD = "xxxx xxxx xxxx xxxx"  # Gmail App Password (not your real password)
-TO_EMAIL           = "you@gmail.com"        # Where to send the digest (can be same or different)
+GMAIL_ADDRESS      = os.environ.get("GMAIL_ADDRESS")         # Your Gmail address (sender)
+GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD")   # Gmail App Password (not your real password)
+TO_EMAIL           = os.environ.get("TO_EMAIL")              # Where to send the digest (can be same or different)
 # ──────────────────────────────────────────────────────────────────────────────
 
 
